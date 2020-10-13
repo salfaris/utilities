@@ -8,7 +8,8 @@ def main():
     no_pattern = r'^n(o)?$'
     
     while True:
-        does_today_counts = input("Does start day counts as a day? [y/n]: ").lower()
+        does_today_counts = input("Does start day counts as a day? [y/n]: ")\
+            .lower()
         yes_match = re.match(yes_pattern, does_today_counts)
         no_match = re.match(no_pattern, does_today_counts)
         
